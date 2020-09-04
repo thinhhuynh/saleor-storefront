@@ -23,6 +23,28 @@ All notable, unreleased changes to this project will be documented in this file.
 
 ## 2.11.0
 
+- Refactor variant picker components and open sidebar after adding product to cart - #809 by @krzysztofwolski
+- Fix checkout address view - #909 by @konstantinoschristomanos
+- Support for static url - #721 by @marianoeramirez and @dominik-zeglen
+
+## 2.11.0-rc.4
+
+- Fix cart sidebar style - #897 by @orzechdev
+
+## 2.11.0-rc.3
+
+- Require payment recreate when payment price is wrong - #892 by @orzechdev
+- Handle JWT token refreshing and verifying - #883 by @orzechdev
+
+## 2.11.0-rc.2
+
+- Update collection products query - #879 by @orzechdev
+- Fix checkout refreshing - #865 by @orzechdev
+- Add purchase availability to product details page - #878 by @orzechdev
+
+## 2.11.0-rc.1
+>>>>>>> 9ce5909d (Bump version to 2.11.0-rc.2)
+
 - Add product hyperlink in cart page - #745 by @konstantinoschristomanos
 - Add Cypress tags to all of the buttons (also speed up tests) - #718 by @krzysztofwolski
 - Automatically choose variant attributes from url in ProductVariantPicker - #708 by @AlicjaSzu
