@@ -44,6 +44,9 @@ All notable, unreleased changes to this project will be documented in this file.
 
 ## 2.11.0-rc.1
 >>>>>>> 9ce5909d (Bump version to 2.11.0-rc.2)
+=======
+## 2.11.0
+>>>>>>> 3ba4ffa8 (Bump to 2.11.0)
 
 - Add product hyperlink in cart page - #745 by @konstantinoschristomanos
 - Add Cypress tags to all of the buttons (also speed up tests) - #718 by @krzysztofwolski
