@@ -41,12 +41,7 @@ All notable, unreleased changes to this project will be documented in this file.
 - Update collection products query - #879 by @orzechdev
 - Fix checkout refreshing - #865 by @orzechdev
 - Add purchase availability to product details page - #878 by @orzechdev
-
 ## 2.11.0-rc.1
->>>>>>> 9ce5909d (Bump version to 2.11.0-rc.2)
-=======
-## 2.11.0
->>>>>>> 3ba4ffa8 (Bump to 2.11.0)
 
 - Add product hyperlink in cart page - #745 by @konstantinoschristomanos
 - Add Cypress tags to all of the buttons (also speed up tests) - #718 by @krzysztofwolski
