@@ -29,7 +29,7 @@ exports[`Storyshots @components/atoms/NavLink default 1`] = `
 .c1:hover,
 .c1:focus {
   outline: none;
-  color: #13bebb;
+  color: #129d54;
 }
 
 <div

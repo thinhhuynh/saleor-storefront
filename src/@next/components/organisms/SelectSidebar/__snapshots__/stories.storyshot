@@ -105,7 +105,7 @@ exports[`Storyshots @components/organisms/SelectSidebar default 1`] = `
 
 .c9:hover {
   background-color: rgba(6,132,123,0.25);
-  color: #06a09e;
+  color: #006d29;
   font-weight: 600;
 }
 
@@ -130,7 +130,7 @@ exports[`Storyshots @components/organisms/SelectSidebar default 1`] = `
 
 .c10:hover {
   background-color: rgba(6,132,123,0.25);
-  color: #06a09e;
+  color: #006d29;
   font-weight: 600;
 }
 
@@ -318,7 +318,7 @@ exports[`Storyshots @components/organisms/SelectSidebar default 1`] = `
               >
                 <path
                   d="M31.416 2.142l-19.195 29.858-11.638-12.414 2.889-2.709 8.164 8.708 16.448-25.586 3.331 2.142z"
-                  fill="#13BEBB"
+                  fill="#129d54"
                 />
               </svg>
             </div>
@@ -566,7 +566,7 @@ exports[`Storyshots @components/organisms/SelectSidebar with footer 1`] = `
 
 .c9:hover {
   background-color: rgba(6,132,123,0.25);
-  color: #06a09e;
+  color: #006d29;
   font-weight: 600;
 }
 
@@ -591,7 +591,7 @@ exports[`Storyshots @components/organisms/SelectSidebar with footer 1`] = `
 
 .c10:hover {
   background-color: rgba(6,132,123,0.25);
-  color: #06a09e;
+  color: #006d29;
   font-weight: 600;
 }
 
@@ -784,7 +784,7 @@ exports[`Storyshots @components/organisms/SelectSidebar with footer 1`] = `
               >
                 <path
                   d="M31.416 2.142l-19.195 29.858-11.638-12.414 2.889-2.709 8.164 8.708 16.448-25.586 3.331 2.142z"
-                  fill="#13BEBB"
+                  fill="#129d54"
                 />
               </svg>
             </div>

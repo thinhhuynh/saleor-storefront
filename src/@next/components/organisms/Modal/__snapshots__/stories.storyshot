@@ -18,7 +18,7 @@ exports[`Storyshots @components/organisms/Modal Modal Form 1`] = `
 }
 
 .c10 {
-  background-color: #13bebb;
+  background-color: #129d54;
   padding: 0.1rem 2rem;
   border: none;
   -webkit-transition: 0.3s;
@@ -30,12 +30,12 @@ exports[`Storyshots @components/organisms/Modal Modal Form 1`] = `
 }
 
 .c10:hover {
-  background-color: #06a09e;
+  background-color: #006d29;
   color: #fff;
 }
 
 .c10:active {
-  background-color: #06a09e;
+  background-color: #006d29;
   box-shadow: -3px 3px 14px 0px rgba(129,67,67,0.2);
 }
 
@@ -332,7 +332,7 @@ exports[`Storyshots @components/organisms/Modal Modal Form disabled 1`] = `
 }
 
 .c9 {
-  background-color: #13bebb;
+  background-color: #129d54;
   padding: 0.1rem 2rem;
   border: none;
   -webkit-transition: 0.3s;
@@ -344,12 +344,12 @@ exports[`Storyshots @components/organisms/Modal Modal Form disabled 1`] = `
 }
 
 .c9:hover {
-  background-color: #06a09e;
+  background-color: #006d29;
   color: #fff;
 }
 
 .c9:active {
-  background-color: #06a09e;
+  background-color: #006d29;
   box-shadow: -3px 3px 14px 0px rgba(129,67,67,0.2);
 }
 
@@ -613,7 +613,7 @@ exports[`Storyshots @components/organisms/Modal Modal Info 1`] = `
 }
 
 .c9 {
-  background-color: #13bebb;
+  background-color: #129d54;
   padding: 0.1rem 2rem;
   border: none;
   -webkit-transition: 0.3s;
@@ -625,12 +625,12 @@ exports[`Storyshots @components/organisms/Modal Modal Info 1`] = `
 }
 
 .c9:hover {
-  background-color: #06a09e;
+  background-color: #006d29;
   color: #fff;
 }
 
 .c9:active {
-  background-color: #06a09e;
+  background-color: #006d29;
   box-shadow: -3px 3px 14px 0px rgba(129,67,67,0.2);
 }
 
