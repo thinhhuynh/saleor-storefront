@@ -100,6 +100,9 @@
         &__action {
             text-align: center;
             margin-top: $spacer;
+            button {
+                width: 100%;
+            }
         }
     }
 }

@@ -29,7 +29,7 @@ exports[`Storyshots @components/organisms/TopNavbar default 1`] = `
 .c6:hover,
 .c6:focus {
   outline: none;
-  color: #13bebb;
+  color: #129d54;
 }
 
 .c1 {
@@ -108,7 +108,7 @@ exports[`Storyshots @components/organisms/TopNavbar default 1`] = `
 }
 
 .c10:hover path {
-  fill: #13bebb;
+  fill: #129d54;
 }
 
 .c11 {
@@ -133,11 +133,11 @@ exports[`Storyshots @components/organisms/TopNavbar default 1`] = `
 }
 
 .c11:hover {
-  color: #13bebb;
+  color: #129d54;
 }
 
 .c11:hover path {
-  fill: #13bebb;
+  fill: #129d54;
 }
 
 .c12 {
@@ -174,7 +174,7 @@ exports[`Storyshots @components/organisms/TopNavbar default 1`] = `
 }
 
 .c5:hover {
-  color: #13bebb;
+  color: #129d54;
 }
 
 @media (max-width:992px) {

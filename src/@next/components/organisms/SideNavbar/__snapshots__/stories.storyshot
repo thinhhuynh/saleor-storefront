@@ -31,7 +31,7 @@ exports[`Storyshots @components/organisms/SideNavbar default 1`] = `
 .c12:hover,
 .c12:focus {
   outline: none;
-  color: #13bebb;
+  color: #129d54;
 }
 
 .c2 {
@@ -147,13 +147,13 @@ exports[`Storyshots @components/organisms/SideNavbar default 1`] = `
 
 .c9:hover,
 .c9:focus {
-  color: #13bebb;
+  color: #129d54;
   background-color: rgba(6,132,123,0.25);
 }
 
 .c9:hover path,
 .c9:focus path {
-  fill: #13bebb;
+  fill: #129d54;
 }
 
 .c11 {
@@ -185,13 +185,13 @@ exports[`Storyshots @components/organisms/SideNavbar default 1`] = `
 
 .c11:hover,
 .c11:focus {
-  color: #13bebb;
+  color: #129d54;
   background-color: rgba(6,132,123,0.25);
 }
 
 .c11:hover path,
 .c11:focus path {
-  fill: #13bebb;
+  fill: #129d54;
 }
 
 .c8 {
@@ -223,13 +223,13 @@ exports[`Storyshots @components/organisms/SideNavbar default 1`] = `
 
 .c8:hover,
 .c8:focus {
-  color: #13bebb;
+  color: #129d54;
   background-color: rgba(6,132,123,0.25);
 }
 
 .c8:hover path,
 .c8:focus path {
-  fill: #13bebb;
+  fill: #129d54;
 }
 
 .c6 {
@@ -261,7 +261,7 @@ exports[`Storyshots @components/organisms/SideNavbar default 1`] = `
 
 .c7:hover path,
 .c7:focus path {
-  fill: #13bebb;
+  fill: #129d54;
 }
 
 <div
