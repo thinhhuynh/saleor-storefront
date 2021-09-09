@@ -35,6 +35,11 @@ export const paths = {
   // FIXME: User order should be accessible via order id
   accountOrderDetail: `${accountBaseUrl}order-history/:token`,
   accountOrderHistory: `${accountBaseUrl}order-history`,
+
+  /**
+   * WeenSpace Templates 
+  */
+  templates: `${baseUrl}templates`,
 };
 
 /**

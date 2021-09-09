@@ -1,6 +1,7 @@
+/* eslint-disable simple-import-sort/imports */
 import { SaleorProvider } from "@saleor/sdk";
 import { ConfigInput } from "@saleor/sdk/lib/types";
-import { Integrations as ApmIntegrations } from "@sentry/apm";
+import { Integrations as ApmIntegrations } from "@sentry/tracing";
 import * as Sentry from "@sentry/browser";
 import type {
   AppContext as NextAppContext,

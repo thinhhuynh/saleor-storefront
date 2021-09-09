@@ -30,7 +30,9 @@
       "@graphql/*": ["./src/@next/graphql/*"],
       "@app/*": ["./src/@next/*"],
       "@locale/*": ["./locale/*"],
-      "@temp/*": ["./src/*"]
+      "@temp/*": ["./src/*"],
+      "@weenspace-assets/*": ["./src/components/WeenSpace/assets/*"],
+      "@weenspace/*": ["./src/components/WeenSpace/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
