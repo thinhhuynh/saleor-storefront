@@ -1,9 +1,11 @@
 import { ProductOrder } from "@saleor/sdk";
 import { FetchResult } from "apollo-link";
 
-import { channelSlug } from "@temp/constants";
-
-import { OrderDirection, ProductOrderField } from "../../gqlTypes/globalTypes";
+import {
+  AttributeInput,
+  OrderDirection,
+  ProductOrderField,
+} from "../../gqlTypes/globalTypes";
 import { IFilterAttributes } from "../@next/types";
 import { FormError } from "./types";
 
@@ -36,10 +38,10 @@ interface AttributeDict {
 }
 export const convertToAttributeScalar = (
   attributes: AttributeDict | IFilterAttributes
-) =>
+): AttributeInput[] =>
   Object.entries(attributes)
     .map(([key, value]) =>
-      value.map((attribute: any) => ({ slug: key, value: attribute }))
+      value.map((attribute: any) => ({ slug: key, values: [attribute] }))
     )
     .reduce((prev, curr) => [...prev, ...curr], []);
 
@@ -60,8 +62,7 @@ export const getValueOrEmpty = <T>(value: T): T | string =>
   value === undefined || value === null ? "" : value;
 
 export const convertSortByFromString = (
-  sortBy: string,
-  channel = channelSlug
+  sortBy: string
 ): ProductOrder | null => {
   if (!sortBy) {
     return null;
@@ -89,7 +90,7 @@ export const convertSortByFromString = (
     default:
       return null;
   }
-  return { field, direction, channel };
+  return { field, direction };
 };
 
 export const maybe = <T>(exp: () => T, d?: T) => {

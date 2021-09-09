@@ -283,13 +283,18 @@ export enum ProductOrderField {
 
 export interface AttributeInput {
   slug: string;
-  value?: string | null;
   values?: (string | null)[] | null;
+  valuesRange?: IntRangeInput | null;
+  boolean?: boolean | null;
+}
+
+export interface IntRangeInput {
+  gte?: number | null;
+  lte?: number | null;
 }
 
 export interface ProductOrder {
   direction: OrderDirection;
-  channel?: string | null;
   attributeId?: string | null;
   field?: ProductOrderField | null;
 }
