@@ -4,6 +4,7 @@ All notable, unreleased changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+- Add EditorJS embeded renderer - SALEOR-3354 by @mociepka
 - Handle Order confirmation at Thank You page - #956 by @mmarkusik
 - Add EditorJS renderer - #947 by @krzysztofwolski
 - New cart sidebar - #907 by @orzechdev
@@ -14,6 +15,11 @@ All notable, unreleased changes to this project will be documented in this file.
 - Drop deprecated `ProductVariant.isAvailable` field - #965 by @maarcingebala
 - Add eslint import sort - #979 by @pitorgrundas
 - Enable incremental server-side regeneration for store pages - #988 by @pitorgrundas
+- Update account mutations with channel slug - #1039 by @orzechdev
+- Update register mutation with channel slug - #1045 by @orzechdev
+- Update queries with new channel API - #1072 by @orzechdev
+- Change order number format - #1073 by @kamilpastuszka
+- Use new Stripe payment gateway - #1057 by @orzechdev
 
 ## 2.11.0
 
