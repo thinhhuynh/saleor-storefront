@@ -31,10 +31,9 @@ export const useProductsQuery = (
       },
       collections: collectionId ? [collectionId] : [],
       categories: categoryId ? [categoryId] : [],
-      channel: channelSlug,
       attributes: filters.attributes
         ? convertToAttributeScalar(filters.attributes)
-        : {},
+        : [],
     },
     channel: channelSlug,
     first: PRODUCTS_PER_PAGE,
