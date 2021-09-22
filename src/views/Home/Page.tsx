@@ -45,16 +45,16 @@ const Page: React.FC<{
         <div className="home-page__hero-text">
           <div>
             <span className="home-page__hero__title">
-              <h1>
+              <h2>
                 <FormattedMessage defaultMessage="Final reduction" />
-              </h1>
+              </h2>
             </span>
           </div>
           <div>
             <span className="home-page__hero__title">
-              <h1>
+              <h4>
                 <FormattedMessage defaultMessage="Up to 70% off sale" />
-              </h1>
+              </h4>
             </span>
           </div>
         </div>
