@@ -7,6 +7,9 @@ import { MenuItem } from "@graphql/gqlTypes/MenuItem";
 
 import { NavLink, OverlayContextInterface } from "..";
 import NavItem from "./NavItem";
+import ReactSVG from "react-svg";
+
+import userImg from "../../images/user.svg";
 
 import "./scss/index.scss";
 
@@ -38,12 +41,25 @@ export const NavDropdown: React.FC<NavDropdownProps> = props => {
           "main-menu__nav-dropdown__body--visible": showDropdown,
         })}
       >
-        <ul>
-          {children?.map((subItem, i) => (
-            <NavItem key={i} hideOverlay={onHideDropdown} {...subItem} />
-          ))}
-        </ul>
-      </li>
-    </ul>
-  );
-};
+        <li>
+          <ReactSVG path={userImg} />
+          <NavLink item={this.props} onClick={onHideDropdown} />
+        </li>
+        <li
+          className={classNames({
+            "main-menu__nav-dropdown__body": true,
+            "main-menu__nav-dropdown__body--visible": showDropdown,
+          })}
+        >
+          <ul>
+            {children.map((subItem, i) => (
+              <NavItem key={i} hideOverlay={onHideDropdown} {...subItem} />
+            ))}
+          </ul>
+        </li>
+      </ul>
+    );
+  }
+}
+
+export default NavDropdown;
