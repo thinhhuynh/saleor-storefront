@@ -6,6 +6,9 @@ import * as React from "react";
 import { NavLink, OverlayContextInterface } from "..";
 import { MainMenu_shop_navigation_main_items } from "./gqlTypes/MainMenu";
 import NavItem from "./NavItem";
+import ReactSVG from "react-svg";
+
+import userImg from "../../images/user.svg";
 
 import "./scss/index.scss";
 
@@ -35,6 +38,7 @@ class NavDropdown extends React.PureComponent<
         onMouseLeave={onHideDropdown}
       >
         <li>
+          <ReactSVG path={userImg} />
           <NavLink item={this.props} onClick={onHideDropdown} />
         </li>
         <li

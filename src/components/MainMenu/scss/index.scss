@@ -1,5 +1,28 @@
 @import "../../../globalStyles/scss/variables.scss";
 
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+header.scroll-down{
+  background-color: $white;
+  box-shadow: 0px 0px 9px $base-font-color;
+  .main-menu{
+    &__item{
+      svg path{
+        fill: $base-font-color;
+      }
+      a{
+        color: $base-font-color;
+      }
+      a:hover{
+        color: $turquoise-dark;
+      }
+    }
+  }
+}
+
 .header-with-dropdown {
   z-index: 3;
 }
@@ -7,34 +30,31 @@
 .main-menu {
   align-items: center;
   align-items: stretch;
-  background-color: $white;
-  border-bottom: 1px solid $gray-light;
   display: flex;
   flex-direction: row;
   height: 3.55rem;
   position: relative;
-
-  &__left {
-    flex-basis: calc(50% - 2rem);
-
-    @media (min-width: $small-screen) {
-      flex-basis: calc(50% - 4rem);
+  max-width: $container-width;
+  margin: 10px auto;
+  &__center {
+    flex-grow: 1;
+    @media (max-width: $medium-screen) {
+      flex-grow: 0;
+      order: 1;
     }
-
     ul {
       display: flex;
       align-items: center;
       height: 100%;
+      justify-content: right;
+      position: relative;
     }
   }
 
   &__right {
-    flex-basis: calc(50% - 2rem);
-
-    @media (min-width: $small-screen) {
-      flex-basis: calc(50% - 4rem);
+    @media (max-width: $medium-screen) {
+      flex-grow: 1;
     }
-
     ul {
       display: flex;
       justify-content: flex-end;
@@ -42,9 +62,12 @@
     }
   }
 
-  &__center {
+  &__left {
     align-self: center;
-
+    
+    @media (max-width: $medium-screen) {
+      padding-left: 10px;
+    }
     svg {
       width: 4rem;
 
@@ -59,12 +82,17 @@
     height: 100%;
     text-transform: uppercase;
 
+    *{
+      fill: $white; 
+    }
+
     a {
       text-decoration: none;
-      color: $base-font-color;
+      color: $white;
       position: relative;
       transition: 0.3s;
-
+      margin-left: 10px;
+      
       &:hover {
         color: $turquoise;
       }
@@ -72,7 +100,6 @@
   }
 
   &__hamburger {
-    border-right: 1px solid $gray-light;
     cursor: pointer;
     padding: $spacer;
 
@@ -184,10 +211,6 @@
     line-height: 24px;
     transition: 0.3s;
 
-    @media (min-width: $medium-screen) {
-      border-left: 1px solid $gray-light;
-    }
-
     svg * {
       transition: 0.3s;
     }
@@ -217,12 +240,10 @@
   &__nav-dropdown {
     padding: 0 1.5rem;
 
-    &--active {
-      background-color: $turquoise-light;
-    }
-
     & > li:first-child {
       text-align: center;
+      display: flex;
+      align-items: center;
     }
 
     &__body {
@@ -232,14 +253,18 @@
       border-top-width: 1px;
       display: none;
       left: 0;
-      padding: 2rem;
+      padding: 1rem;
       position: absolute;
       top: 100%;
-      width: 100%;
       z-index: 3;
+      border-radius: 6px;
 
       &--visible {
         display: block;
+      }
+
+      > ul{
+        flex-direction: column;
       }
 
       li *,
@@ -249,17 +274,16 @@
 
       > ul > li {
         align-self: flex-start;
-        margin-left: 2rem;
         position: relative;
-        width: 188px;
+        min-width: 168px;
 
         // 2nd level name
         > a {
           font-size: $base-font-size;
           position: relative;
-          text-transform: uppercase;
-          padding-bottom: 9px;
-          margin-bottom: 3px;
+          text-transform: capitalize;
+          padding: 5px 0;
+          color: $base-font-color;
         }
         > ul > li:first-child {
           position: relative;
