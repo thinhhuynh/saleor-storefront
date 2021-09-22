@@ -3,6 +3,7 @@ button.button {
     background-color: $turquoise;
     padding: $button-padding;
     border: none;
+    border-radius: 100px;
     box-shadow: $button-box-shadow;
     transition: $button-transition;
     outline: none;
