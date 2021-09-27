@@ -12,8 +12,10 @@ export const Bar = styled.div`
   align-items: center;
   padding: 0 2rem;
   font-size: ${props => props.theme.typography.smallFontSize};
-  margin-top: 1rem;
   margin-bottom: 1.4rem;
+  border-radius: 0.5rem;
+  margin-top: -2.5rem;
+  box-shadow: 0px 0px 14px -6px #555;
 `;
 
 export const LeftSide = styled.div`

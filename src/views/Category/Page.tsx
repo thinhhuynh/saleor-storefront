@@ -62,8 +62,10 @@ export const Page: React.FC<PageProps> = ({
 
   return (
     <div className="category">
+      <div className="category__banner">
+        <h3 className="category__banner__name">{category.name}</h3>
+      </div>
       <div className="container">
-        <Breadcrumbs breadcrumbs={extractBreadcrumbs(details, ancestors)} />
         <FilterSidebar
           show={showFilters}
           hide={() => setShowFilters(false)}
@@ -85,13 +87,15 @@ export const Page: React.FC<PageProps> = ({
           onChange={onOrder}
           onCloseFilterAttribute={onAttributeFiltersChange}
         />
-
-        <ProductList
-          products={products}
-          canLoadMore={hasNextPage}
-          loading={displayLoader}
-          onLoadMore={onLoadMore}
-        />
+        <Breadcrumbs breadcrumbs={extractBreadcrumbs(category)} />
+        {canDisplayProducts && (
+          <ProductList
+            products={products.edges.map(edge => edge.node)}
+            canLoadMore={hasNextPage}
+            loading={displayLoader}
+            onLoadMore={onLoadMore}
+          />
+        )}
       </div>
 
       {!displayLoader && !hasProducts && (

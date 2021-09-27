@@ -1,6 +1,17 @@
 @import "../../../globalStyles/scss/variables.scss";
 
 .category {
+  &__banner{
+    height: 30vh;
+    background: linear-gradient(-45deg, $turquoise-dark -38%, $blue 68%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__name{
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
   &__header {
     text-align: center;
     padding-top: $spacer * 4.5;
