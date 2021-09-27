@@ -2,8 +2,8 @@ import { media, styled } from "@styles";
 import { Size } from "./types";
 
 const padding = {
-  md: "0.9rem 3.7rem",
-  sm: "0.1rem 2rem",
+  md: "0.7rem 2rem",
+  sm: "0.1rem 1rem",
 };
 
 const fontSize = (fontSize: string, smallFontSize: string) => ({
@@ -55,10 +55,8 @@ export const Primary = styled.button<{
 `;
 
 export const Secondary = styled(Primary)`
-  box-shadow: inset 0px 0px 0px 3px
-    ${props => props.theme.button.colors.secondary.color};
-  border-left: 1px solid ${props => props.theme.button.colors.secondary.color};
-  border-right: 1px solid ${props => props.theme.button.colors.secondary.color};
+  border: 1px solid ${props => props.theme.button.colors.secondary.color};
+  border-radius: 0.5rem;
 `;
 
 export const Text = styled.span<{ size: Size }>`
@@ -69,7 +67,7 @@ export const Text = styled.span<{ size: Size }>`
       button: { typography },
     },
   }) => fontSize(typography.fontSize, typography.smallFontSize)[size]};
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: ${props => props.theme.typography.boldFontWeight};
   line-height: ${props => props.theme.typography.baseLineHeight};
 `;

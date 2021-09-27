@@ -90,6 +90,7 @@ const Page: React.FC<PageProps> = ({
     <div className="category">
       <div className="category__banner">
         <h3 className="category__banner__name">{category.name}</h3>
+        <img src={category.backgroundImage.url} />
       </div>
       <div className="container">
         <FilterSidebar
