@@ -64,6 +64,7 @@ header.scroll-down{
 
   &__left {
     align-self: center;
+    padding: 1rem;
     
     @media (max-width: $medium-screen) {
       padding-left: 10px;

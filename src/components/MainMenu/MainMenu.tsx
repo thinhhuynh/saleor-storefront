@@ -29,8 +29,7 @@ import logoImg from "../../images/logo.svg";
 import searchImg from "../../images/search.svg";
 import userImg from "../../images/user.svg";
 import {
-  mediumScreen,
-  smallScreen,
+  mediumScreen
 } from "../../globalStyles/scss/variables.scss";
 import "./scss/index.scss";
 
