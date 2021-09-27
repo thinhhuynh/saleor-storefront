@@ -10,11 +10,13 @@ export const blueDark = "#190c4e";
 export const blueLight = "#513CA3";
 export const blueOverlay = `rgba(33,18,94,0.1)`;
 export const blueOverlayDark = `rgba(33,18,94,0.2)`;
+export const green = "#129d54";
+export const greenLight = "#129d54";
+export const greenDark = "rgb(0, 109, 41)";
 export const gray = "#7d7d7d";
 export const grayMedium = "#c4c4c4";
 export const grayDark = "#323232";
 export const grayLight = "#f1f5f5";
-export const green = "#3ed256";
 export const overlayColor = "rgba(199, 207, 207, 0.8)";
 export const rose = "#c22d74";
 export const turquoise = "#129d54";
@@ -54,9 +56,9 @@ export const theme = {
   primaryDark: turquoiseDark,
   primaryLight: turquoiseLight,
   primaryTransparent: turquoiseTransparent,
-  secondary: blue,
-  secondaryDark: blueDark,
-  secondaryLight: blueLight,
+  secondary: green,
+  secondaryDark: greenDark,
+  secondaryLight: greenLight,
   secondaryOverlay: blueOverlay,
   secondaryOverlayDark: blueOverlayDark,
   success: green,

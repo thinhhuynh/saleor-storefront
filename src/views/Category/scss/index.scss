@@ -2,14 +2,19 @@
 
 .category {
   &__banner{
-    height: 30vh;
-    background: linear-gradient(-45deg, $turquoise-dark -38%, $blue 68%);
     display: flex;
     justify-content: center;
     align-items: center;
+
     &__name{
       color: $white;
       text-transform: uppercase;
+      position: absolute;
+      margin: auto;
+    }
+    
+    img{
+      z-index: -1;
     }
   }
   &__header {
