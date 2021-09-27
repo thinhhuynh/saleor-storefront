@@ -78,7 +78,7 @@ const Page: React.FC<{
         products={featuredProducts.products}
         title={intl.formatMessage({ defaultMessage: "Featured" })}
       />
-      {categoriesExist() && (
+      {/* {categoriesExist() && (
         <div className="home-page__categories">
           <div className="container">
             <h3>
@@ -117,7 +117,7 @@ const Page: React.FC<{
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };
