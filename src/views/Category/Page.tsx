@@ -88,8 +88,10 @@ const Page: React.FC<PageProps> = ({
 
   return (
     <div className="category">
+      <div className="category__banner">
+        <h3 className="category__banner__name">{category.name}</h3>
+      </div>
       <div className="container">
-        <Breadcrumbs breadcrumbs={extractBreadcrumbs(category)} />
         <FilterSidebar
           show={showFilters}
           hide={() => setShowFilters(false)}
@@ -108,6 +110,7 @@ const Page: React.FC<PageProps> = ({
           onChange={onOrder}
           onCloseFilterAttribute={onAttributeFiltersChange}
         />
+        <Breadcrumbs breadcrumbs={extractBreadcrumbs(category)} />
         {canDisplayProducts && (
           <ProductList
             products={products.edges.map(edge => edge.node)}

@@ -8,15 +8,9 @@ const textProps = css`
 `;
 
 export const Wrapper = styled.div`
-  background: ${props => props.theme.colors.light};
-  padding: 2.5rem;
   text-align: center;
   max-height: 30rem;
   transition: 0.3s;
-
-  :hover {
-    background-color: ${props => props.theme.colors.hoverLightBackground};
-  }
 
   ${media.largeScreen`
     padding: 1.8rem;
@@ -24,19 +18,24 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h4`
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: normal;
+  padding: 1.5rem 1rem 1rem 1rem;
   ${textProps}
 `;
 
-export const Price = styled.p`
+export const Price = styled.strong`
+  float: right;
   ${textProps}
 `;
 
 export const Image = styled.div`
+  background: ${props => props.theme.colors.light};
   width: auto;
   height: auto;
   max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 25px 20px -27px ${props => props.theme.colors.lightFont};
 
   > img {
     width: auto;
