@@ -29,8 +29,7 @@ import { NavDropdown } from "./NavDropdown";
 
 import "./scss/index.scss";
 import {
-  mediumScreen,
-  smallScreen,
+  mediumScreen
 } from "../../globalStyles/scss/variables.scss";
 
 interface MainMenuProps {
