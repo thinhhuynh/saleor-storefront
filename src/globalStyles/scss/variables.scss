@@ -63,8 +63,8 @@ $message-title-weight: $bold-font-weight;
 $message-title-margin: 0 $spacer * 1.5 0 0;
 $message-content-margin: $spacer 0 0;
 // product item
-$product-item-title-text-transform: uppercase;
-$product-item-title-font-weight: $bold-font-weight;
+$product-item-title-text-transform: capitalize;
+$product-item-title-font-weight: normal;
 $product-item-title-margin: $spacer / 2 0 0;
 $product-item-title-height: 2.5rem;
 $product-item-category-color: $gray;
