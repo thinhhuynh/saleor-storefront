@@ -8,6 +8,12 @@
     font-weight: $product-item-title-font-weight;
     margin-top: $spacer;
     text-align: left;
+    padding: 0 1rem;
+
+    &__price{
+      float: right;
+      font-weight: $product-item-price-font-weight;
+    }
   }
 
   &__undiscounted_price {
@@ -20,19 +26,15 @@
   &__category {
     color: $product-item-category-color;
     text-align: left;
-  }
-
-  &__price {
-    font-weight: $product-item-price-font-weight;
-    margin: $product-item-price-margin;
-    text-align: left;
+    padding: 0 1rem;
   }
 
   &__image {
-    background-color: $turquoise-light;
     display: flex;
-    height: 350px;
     justify-content: center;
+    background-color: $turquoise-light;
+    border-radius: 10px;
+    box-shadow: 0 25px 20px -21px $gray;
 
     img {
       object-fit: contain;
