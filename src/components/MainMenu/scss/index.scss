@@ -30,6 +30,7 @@
 
   &__right {
     flex-basis: calc(50% - 2rem);
+    padding: 1rem 0;
 
     @media (min-width: $small-screen) {
       flex-basis: calc(50% - 4rem);

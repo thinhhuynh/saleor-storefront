@@ -39,7 +39,7 @@ exports[`Storyshots @components/atoms/SocialMediaIcon sample medium 1`] = `
     <a
       aria-label="facebook"
       className="c2"
-      href="https://www.facebook.com/mirumeelabs/"
+      href="https://www.facebook.com/traicaimekong/"
       target="_blank"
     >
       <svg

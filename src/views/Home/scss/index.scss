@@ -35,7 +35,7 @@
     &__title {
       background-color: $white;
       display: inline-block;
-      transform: skew(45deg);
+      transform: skew(0deg);
       padding: $spacer $spacer * 3;
       margin-bottom: $spacer / 2;
 
@@ -46,7 +46,7 @@
 
       h1 {
         display: inline-block;
-        transform: skew(-45deg);
+        transform: skew(0deg);
         font-weight: $bold-font-weight;
         text-transform: uppercase;
         color: $blue;

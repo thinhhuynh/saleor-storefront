@@ -80,7 +80,7 @@ const App = ({
 }: AppProps) => (
   <>
     <Head>
-      <title>Demo PWA Storefront – Saleor Commerce</title>
+      <title>Sỉ và lẻ sầu riêng, bưởi da xanh – Trái Cây Mêkông</title>
       <link rel="preconnect" href={apiUrl} />
       <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
       <link rel="icon" type="image/png" href="/favicon-36.png" />

@@ -6,7 +6,7 @@ import { Medium } from "./types";
 
 const FACEBOOK_MEDIUM: Medium = {
   ariaLabel: "facebook",
-  href: "https://www.facebook.com/mirumeelabs/",
+  href: "https://www.facebook.com/traicaymekong/",
   iconName: "social_facebook",
 };
 

@@ -17,6 +17,8 @@ import hamburgerHoverImg from "../../images/hamburger-hover.svg";
 import logoImg from "../../images/logo.svg";
 import searchImg from "../../images/search.svg";
 import userImg from "../../images/user.svg";
+import flagVn from "../../images/flag-vn.svg";
+import flagUs from "../../images/flag-us.svg";
 import {
   MenuDropdown,
   Offline,
@@ -223,6 +225,35 @@ export const MainMenu: React.FC<MainMenuProps> = ({
 
         <div className="main-menu__right">
           <ul>
+            <MenuDropdown
+              head={
+                <li className="main-menu__icon main-menu__language--active">
+                  <ReactSVG path={flagVn} />
+                </li>
+              }
+              content={
+                <ul className="main-menu__dropdown">
+                  <li data-test="desktopMenuViLink">
+                    <Link href={paths.account}>
+                      <a>
+                        <FormattedMessage
+                          {...commonMessages.myAccount}
+                        />
+                      </a>
+                    </Link>
+                  </li>
+                  <li data-test="desktopMenuEnLink">
+                    <Link href={paths.accountOrderHistory}>
+                      <a>
+                        <FormattedMessage
+                          {...commonMessages.orderHistory}
+                        />
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              }
+            />
             <Online>
               <Media
                 query={{ minWidth: smallScreen }}
@@ -323,23 +354,25 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                 />
               </li>
             </Offline>
-            <li
-              data-test="menuSearchOverlayLink"
-              className="main-menu__search"
-              onClick={() =>
-                overlayContext.show(OverlayType.search, OverlayTheme.right)
-              }
-            >
-              <Media
-                query={{ minWidth: mediumScreen }}
-                render={() => (
-                  <span>
-                    <FormattedMessage {...commonMessages.search} />
-                  </span>
-                )}
-              />
-              <ReactSVG path={searchImg} />
-            </li>
+            {false && (
+              <li
+                data-test="menuSearchOverlayLink"
+                className="main-menu__search"
+                onClick={() =>
+                  overlayContext.show(OverlayType.search, OverlayTheme.right)
+                }
+              >
+                <Media
+                  query={{ minWidth: mediumScreen }}
+                  render={() => (
+                    <span>
+                      <FormattedMessage {...commonMessages.search} />
+                    </span>
+                  )}
+                />
+                <ReactSVG path={searchImg} />
+              </li>
+            )}
           </ul>
         </div>
       </nav>

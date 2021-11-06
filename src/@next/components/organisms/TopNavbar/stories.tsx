@@ -7,11 +7,11 @@ import { TopNavbar } from ".";
 const items = [
   {
     id: "TWVudUl0ZW06Mjcx",
-    name: "Accessories",
+    name: "Sầu riêng",
     category: {
       id: "Q2F0ZWdvcnk6Nw==",
-      name: "Accessories",
-      slug: "accessories",
+      name: "Sầu riêng",
+      slug: "sau-rieng",
       __typename: "Category",
     },
     url: null,
